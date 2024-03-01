@@ -122,3 +122,169 @@ akhir navbar
   width: 100%;
   height: 350px;
 }
+
+footer {
+  position: fixed;
+  bottom: 0;
+} /*Menetapkan posisi elemen footer menjadi tetap di bagian bawah halaman.*/
+
+.footer {
+  background-color: #320064;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 50px 50px 60px 50px;
+  margin-top: 80px;
+} /*Gaya untuk elemen dengan kelas .footer. Ini mengatur latar belakang menjadi warna ungu (#320064), lebar elemen menjadi 100%, font tebal dengan ukuran 16 piksel, dan padding diatur secara spesifik.*/
+
+.footer .footer-left,
+.footer .footer-center,
+.footer .footer-right {
+  display: inline-block;
+  vertical-align: top;
+} /*Gaya untuk kolom-kolom di dalam elemen footer. Semua kolom akan ditampilkan sebagai inline-block dan diatur secara vertikal di bagian atas.*/
+
+@media (max-height:800px) {
+  footer {
+      position: static;
+  }
+
+  header {
+      padding-top: 40px;
+  }
+} /*Gaya untuk media query yang akan diterapkan ketika tinggi layar maksimum adalah 800 piksel. Ini mengubah posisi footer menjadi statis dan mengurangi padding atas pada elemen header.*/
+
+.footer .footer-left {
+  width: 30%;
+} /*Menetapkan lebar masing-masing kolom (kiri, tengah, kanan) di dalam elemen footer.*/
+
+.footer h3 {
+  color: #f5f5f5;
+  margin: 0;
+  padding-bottom: 20px;
+  font-family: Georgia, 'Time New Roman', Times, serif;
+} /*Gaya untuk elemen H3 di dalam elemen footer. Memberikan warna teks putih, menghapus margin, menambahkan padding bawah, dan menggunakan font-family tertentu.*/
+
+.footer .footer-left img {
+  width: 25%;
+  vertical-align: middle;
+}
+
+.footer .footer-left .logo-profile {
+  width: 100%;
+}
+
+.footer .footer-copyright {
+  color: #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+  padding-top: 10%;
+} /*Gaya untuk elemen dengan kelas .footer-copyright. Memberikan warna teks, ukuran font, dan padding.*/
+
+.footer .footer-center {
+  width: 35%;
+}
+
+.footer .footer-center i {
+  background-color: #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer .footer-center i.fa-envelope {
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer .footer-center p {
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  margin: 0px;
+}
+
+.footer .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.footer .footer-center p a {
+  color: rgb(22, 255, 177);
+  text-decoration: none;
+}
+
+.footer .footer-right {
+  width: 30%;
+}
+
+.footer .footer-keterangan {
+  line-height: 20px;
+  color: #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0px;
+}
+
+.footer .footer-keterangan span {
+  display: block;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer .footer-nickig {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Menyebarkan item secara merata dengan sedikit ruang di antaranya */
+  margin-top: 25px;
+}
+
+.footer .footer-nickig a {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  height: auto;
+  padding: 10px;
+  color: #ffffff;
+  flex: 0 1 30%; /* Menetapkan basis flex dan membiarkan item tumbuh jika perlu, tapi tidak menyusut di bawah 30% dari container */
+}
+
+.footer .footer-nickig a span {
+  color: #ffffff; /* Menetapkan teks menjadi warna putih */
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.footer .footer-nickig a:hover {
+  background-color: rgb(0, 0, 0);
+}
+
+@media (max-width: 880px) {
+
+  .footer .footer-left,
+  .footer .footer-center,
+  .footer .footer-right {
+      display: block;
+      width: 100%;
+      margin-bottom: 40px;
+      text-align: left;
+  }
+
+  .footer .footer-center i {
+      margin-left: 0px;
+  }
+
+} /*Gaya untuk media query yang akan diterapkan ketika lebar layar maksimum adalah 880 piksel. Ini mengubah tata letak kolom menjadi tata letak blok, mengatur lebar menjadi 100%, menambahkan margin bawah, dan mengubah beberapa gaya untuk kolom tengah.*/
