@@ -145,13 +145,13 @@ footer {
   vertical-align: top;
 } /*Gaya untuk kolom-kolom di dalam elemen footer. Semua kolom akan ditampilkan sebagai inline-block dan diatur secara vertikal di bagian atas.*/
 
-@media (max-height:800px) {
+@media (max-height: 800px) {
   footer {
-      position: static;
+    position: static;
   }
 
   header {
-      padding-top: 40px;
+    padding-top: 0px;
   }
 } /*Gaya untuk media query yang akan diterapkan ketika tinggi layar maksimum adalah 800 piksel. Ini mengubah posisi footer menjadi statis dan mengurangi padding atas pada elemen header.*/
 
@@ -163,7 +163,7 @@ footer {
   color: #f5f5f5;
   margin: 0;
   padding-bottom: 20px;
-  font-family: Georgia, 'Time New Roman', Times, serif;
+  font-family: Georgia, "Time New Roman", Times, serif;
 } /*Gaya untuk elemen H3 di dalam elemen footer. Memberikan warna teks putih, menghapus margin, menambahkan padding bawah, dan menggunakan font-family tertentu.*/
 
 .footer .footer-left img {
@@ -273,18 +273,16 @@ footer {
 }
 
 @media (max-width: 880px) {
-
   .footer .footer-left,
   .footer .footer-center,
   .footer .footer-right {
-      display: block;
-      width: 100%;
-      margin-bottom: 40px;
-      text-align: left;
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: left;
   }
 
   .footer .footer-center i {
-      margin-left: 0px;
+    margin-left: 0px;
   }
-
 } /*Gaya untuk media query yang akan diterapkan ketika lebar layar maksimum adalah 880 piksel. Ini mengubah tata letak kolom menjadi tata letak blok, mengatur lebar menjadi 100%, menambahkan margin bawah, dan mengubah beberapa gaya untuk kolom tengah.*/
