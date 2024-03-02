@@ -78,6 +78,32 @@ navbar
 
 /*akhir navbar*/
 
+/*awal hero section*/
+.heroSection {
+  margin-top: 250px;
+  margin-bottom: 250px;
+  justify-content: center;
+}
+.textal > h1 {
+  margin-left: 26px;
+  font-weight: bolder;
+  font-size: 40px;
+}
+.testing {
+  display: flex;
+}
+.textal > p {
+  margin: 20px;
+  margin-top: 10px;
+  margin-left: 25px;
+  margin-right: 100px;
+  text-align: justify;
+}
+.testing > img {
+  width: 500px;
+  margin-left: 70px;
+}
+/*akhir hero section*/
 /* ourteam */
 
 .ourteam-container {
@@ -124,35 +150,8 @@ hr {
   background-color: #fff;
 }
 /* end ourteam */
-
-/*awal hero section*/
-.heroSection {
-  margin-top: 250px;
-  margin-bottom: 250px;
-  justify-content: center;
-}
-.textal > h1 {
-  margin-left: 26px;
-  font-weight: bolder;
-}
-.testing {
-  display: flex;
-}
-.textal > p {
-  margin: 20px;
-  margin-top: 10px;
-  margin-left: 25px;
-  margin-right: 100px;
-  text-align: justify;
-}
-.testing > img {
-  width: 500px;
-  margin-left: 70px;
-}
-/*akhir hero section*/
 .projects-section {
   margin: 0px;
-  margin-top: 40px;
   padding: 0px;
   display: flex;
   flex-direction: column;
@@ -231,6 +230,9 @@ footer {
   }
 } /*Gaya untuk media query yang akan diterapkan ketika tinggi layar maksimum adalah 800 piksel. Ini mengubah posisi footer menjadi statis dan mengurangi padding atas pada elemen header.*/
 
+.footer {
+  margin: 0px;
+}
 .footer .footer-left {
   width: 30%;
 } /*Menetapkan lebar masing-masing kolom (kiri, tengah, kanan) di dalam elemen footer.*/
@@ -363,58 +365,58 @@ footer {
 } /*Gaya untuk media query yang akan diterapkan ketika lebar layar maksimum adalah 880 piksel. Ini mengubah tata letak kolom menjadi tata letak blok, mengatur lebar menjadi 100%, menambahkan margin bawah, dan mengubah beberapa gaya untuk kolom tengah.*/
 
 /*STYLE ABOUT US DIMULAI DARI SINI*/
-.heading h1{
-  color:#320064;
+.heading h1 {
+  color: #320064;
   font-size: 55px;
   font-weight: bold;
   text-align: center;
   margin-top: 35px;
 }
-.container{
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 90%;
   margin: 65px auto;
 }
-.hero-content{
-  flex:1;
+.hero-content {
+  flex: 1;
   width: 600px;
   margin: 0px 25px;
 }
-.hero-image{
+.hero-image {
   flex: 1;
   width: 600px;
   margin: auto;
 }
-.hero-content p{
+.hero-content p {
   font-size: 24px;
   line-height: 1.5;
   margin-bottom: 40px;
   color: #666;
 }
-img{
+img {
   width: 100%;
   height: auto;
   border-radius: 10px;
 }
-.hero-content h2{
+.hero-content h2 {
   font-size: 38px;
   margin-bottom: 20px;
-  color:#333;
+  color: #333;
 }
-.hero-content button{
+.hero-content button {
   display: inline-block;
   background-color: #320064;
   color: #fff;
   padding: 12px 24px;
   border-radius: 5px;
   font-size: 20px;
-  border:none;
+  border: none;
   cursor: pointer;
   transition: 0.3s ease;
 }
-.hero-content button:hover{
+.hero-content button:hover {
   background-color: #320064;
   transform: scale(1.1);
 }
