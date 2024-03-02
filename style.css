@@ -196,12 +196,12 @@ hr {
 }
 
 footer {
-  position: fixed;
-  bottom: 0;
+  position: sticky;
+  top: 0;
 } /*Menetapkan posisi elemen footer menjadi tetap di bagian bawah halaman.*/
 
 .footer {
-  background-color: #320064;
+  background-color: #000000;
   box-sizing: border-box;
   width: 100%;
   text-align: left;
