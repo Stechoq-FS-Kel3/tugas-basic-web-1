@@ -75,13 +75,36 @@ navbar
   transition: all 0.2s ease-in-out;
 }
 
-/*
-akhir navbar
-*/
+/*akhir navbar*/
 
+/*awal hero section*/
+.heroSection {
+  margin-top: 250px;
+  margin-bottom: 250px;
+  justify-content: center;
+}
+.textal > h1 {
+  margin-left: 26px;
+  font-weight: bolder;
+}
+.testing {
+  display: flex;
+}
+.textal > p {
+  margin: 20px;
+  margin-top: 10px;
+  margin-left: 25px;
+  margin-right: 100px;
+  text-align: justify;
+}
+.testing > img {
+  width: 500px;
+  margin-left: 70px;
+}
+/*akhir hero section*/
 .projects-section {
   margin: 0px;
-  margin-top: 90px;
+  margin-top: 40px;
   padding: 0px;
   display: flex;
   flex-direction: column;
@@ -92,6 +115,7 @@ akhir navbar
 
 .title-project-section {
   font-weight: bold;
+  margin-top: 10px;
   font-size: 30px;
 }
 
@@ -148,13 +172,13 @@ footer {
   vertical-align: top;
 } /*Gaya untuk kolom-kolom di dalam elemen footer. Semua kolom akan ditampilkan sebagai inline-block dan diatur secara vertikal di bagian atas.*/
 
-@media (max-height:800px) {
+@media (max-height: 800px) {
   footer {
-      position: static;
+    position: static;
   }
 
   header {
-      padding-top: 40px;
+    padding-top: 40px;
   }
 } /*Gaya untuk media query yang akan diterapkan ketika tinggi layar maksimum adalah 800 piksel. Ini mengubah posisi footer menjadi statis dan mengurangi padding atas pada elemen header.*/
 
@@ -166,7 +190,7 @@ footer {
   color: #f5f5f5;
   margin: 0;
   padding-bottom: 20px;
-  font-family: Georgia, 'Time New Roman', Times, serif;
+  font-family: Georgia, "Time New Roman", Times, serif;
 } /*Gaya untuk elemen H3 di dalam elemen footer. Memberikan warna teks putih, menghapus margin, menambahkan padding bawah, dan menggunakan font-family tertentu.*/
 
 .footer .footer-left img {
@@ -276,18 +300,16 @@ footer {
 }
 
 @media (max-width: 880px) {
-
   .footer .footer-left,
   .footer .footer-center,
   .footer .footer-right {
-      display: block;
-      width: 100%;
-      margin-bottom: 40px;
-      text-align: left;
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: left;
   }
 
   .footer .footer-center i {
-      margin-left: 0px;
+    margin-left: 0px;
   }
-
 } /*Gaya untuk media query yang akan diterapkan ketika lebar layar maksimum adalah 880 piksel. Ini mengubah tata letak kolom menjadi tata letak blok, mengatur lebar menjadi 100%, menambahkan margin bawah, dan mengubah beberapa gaya untuk kolom tengah.*/
