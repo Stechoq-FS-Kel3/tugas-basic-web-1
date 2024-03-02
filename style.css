@@ -16,7 +16,7 @@ navbar
   width: 100%;
   display: flex;
   justify-content: space-between;
-  height: 55px;
+  height: auto;
   font-size: 20px;
   align-items: center;
   padding: 15px;
@@ -56,6 +56,8 @@ navbar
   justify-content: center;
   align-items: center;
   padding-right: 20px;
+  margin: 0px;
+  padding: 0%;
 }
 
 .navigation > li {
@@ -75,6 +77,38 @@ navbar
   color: #7f3aff;
   transition: all 0.2s ease-in-out;
 }
+.iconNav {
+  width: 60px;
+  margin-right: 30px;
+  display: none;
+}
+
+@media only screen and (max-width: 900px) {
+  ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav {
+    flex-wrap: wrap;
+  }
+  .iconNav {
+    display: flex;
+  }
+  .navigation {
+    display: none;
+  }
+  .testing {
+    flex-direction: column;
+  }
+  .textal {
+    margin-top: 20px;
+    margin: 0px;
+  }
+  #namkel {
+    margin-top: 20px;
+  }
+}
 
 /*akhir navbar*/
 
@@ -83,6 +117,7 @@ navbar
   margin-top: 250px;
   margin-bottom: 250px;
   justify-content: center;
+  display: flex;
 }
 .textal > h1 {
   margin-left: 26px;
@@ -102,7 +137,9 @@ navbar
 .testing > img {
   width: 500px;
   margin-left: 70px;
+  object-fit: contain;
 }
+
 /*akhir hero section*/
 /* ourteam */
 
