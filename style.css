@@ -179,6 +179,7 @@ footer {
 
   header {
     padding-top: 40px;
+    padding-top: 0px;
   }
 } /*Gaya untuk media query yang akan diterapkan ketika tinggi layar maksimum adalah 800 piksel. Ini mengubah posisi footer menjadi statis dan mengurangi padding atas pada elemen header.*/
 
