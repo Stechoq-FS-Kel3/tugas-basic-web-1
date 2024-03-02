@@ -10,16 +10,18 @@
 navbar
 */
 .wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
-  width: 98%;
   justify-content: space-between;
   height: 55px;
   font-size: 20px;
   align-items: center;
   padding: 15px;
   background-color: #0a0a0a;
-  border-bottom: 1px solid #ddd;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .brand {
@@ -74,9 +76,7 @@ navbar
   transition: all 0.2s ease-in-out;
 }
 
-/*
-akhir navbar
-*/
+/*akhir navbar*/
 
 /* ourteam */
 
@@ -121,8 +121,34 @@ hr {
 }
 /* end ourteam */
 
+/*awal hero section*/
+.heroSection {
+  margin-top: 250px;
+  margin-bottom: 250px;
+  justify-content: center;
+}
+.textal > h1 {
+  margin-left: 26px;
+  font-weight: bolder;
+}
+.testing {
+  display: flex;
+}
+.textal > p {
+  margin: 20px;
+  margin-top: 10px;
+  margin-left: 25px;
+  margin-right: 100px;
+  text-align: justify;
+}
+.testing > img {
+  width: 500px;
+  margin-left: 70px;
+}
+/*akhir hero section*/
 .projects-section {
   margin: 0px;
+  margin-top: 40px;
   padding: 0px;
   display: flex;
   flex-direction: column;
@@ -133,6 +159,7 @@ hr {
 
 .title-project-section {
   font-weight: bold;
+  margin-top: 10px;
   font-size: 30px;
 }
 
@@ -195,6 +222,7 @@ footer {
   }
 
   header {
+    padding-top: 40px;
     padding-top: 0px;
   }
 } /*Gaya untuk media query yang akan diterapkan ketika tinggi layar maksimum adalah 800 piksel. Ini mengubah posisi footer menjadi statis dan mengurangi padding atas pada elemen header.*/
