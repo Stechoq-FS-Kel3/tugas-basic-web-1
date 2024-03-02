@@ -135,7 +135,6 @@ footer {
   text-align: left;
   font: bold 16px sans-serif;
   padding: 50px 50px 60px 50px;
-  margin-top: 80px;
 } /*Gaya untuk elemen dengan kelas .footer. Ini mengatur latar belakang menjadi warna ungu (#320064), lebar elemen menjadi 100%, font tebal dengan ukuran 16 piksel, dan padding diatur secara spesifik.*/
 
 .footer .footer-left,
