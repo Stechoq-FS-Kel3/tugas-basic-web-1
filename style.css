@@ -314,3 +314,61 @@ footer {
     margin-left: 0px;
   }
 } /*Gaya untuk media query yang akan diterapkan ketika lebar layar maksimum adalah 880 piksel. Ini mengubah tata letak kolom menjadi tata letak blok, mengatur lebar menjadi 100%, menambahkan margin bawah, dan mengubah beberapa gaya untuk kolom tengah.*/
+
+/*STYLE ABOUT US DIMULAI DARI SINI*/
+.heading h1{
+  color:#320064;
+  font-size: 55px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 35px;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 65px auto;
+}
+.hero-content{
+  flex:1;
+  width: 600px;
+  margin: 0px 25px;
+}
+.hero-image{
+  flex: 1;
+  width: 600px;
+  margin: auto;
+}
+.hero-content p{
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+  color: #666;
+}
+img{
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.hero-content h2{
+  font-size: 38px;
+  margin-bottom: 20px;
+  color:#333;
+}
+.hero-content button{
+  display: inline-block;
+  background-color: #320064;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-size: 20px;
+  border:none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.hero-content button:hover{
+  background-color: #320064;
+  transform: scale(1.1);
+}
+/*STYLE ABOUT US BERAKHIR DI SINI*/
