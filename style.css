@@ -59,6 +59,9 @@ navbar
   margin: 0px;
   padding: 0%;
 }
+#navigation {
+  margin-right: 40px;
+}
 
 .navigation > li {
   list-style-type: none;
@@ -105,8 +108,9 @@ navbar
     margin-top: 20px;
     margin: 0px;
   }
-  #namkel {
-    margin-top: 20px;
+  #halo {
+    padding-top: 10px;
+    margin: 0%;
   }
 }
 
@@ -122,7 +126,16 @@ navbar
 .textal > h1 {
   margin-left: 26px;
   font-weight: bolder;
-  font-size: 40px;
+  font-size: 30px;
+}
+#halo {
+  width: 40px;
+  margin-left: 25px;
+  font-size: 50px;
+  margin-bottom: -10px;
+  font-weight: 800;
+  font-family: sans-serif;
+  letter-spacing: -2px;
 }
 .testing {
   display: flex;
@@ -138,6 +151,7 @@ navbar
   width: 500px;
   margin-left: 70px;
   object-fit: contain;
+  margin-bottom: 10px;
 }
 
 /*akhir hero section*/
