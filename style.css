@@ -90,6 +90,9 @@ navbar
   ul {
     flex-direction: column;
     width: 100%;
+    list-style-type: none;
+    align-items: center;
+    display: flex;
   }
 
   nav {
