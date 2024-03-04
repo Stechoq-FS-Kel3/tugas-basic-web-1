@@ -333,19 +333,6 @@ footer {
   vertical-align: top; /*Menetapkan posisi vertikal elemen. Dalam konteks ini, elemen akan disusun secara vertikal di bagian atas*/
 }
 
-@media (max-height: 800px) {
-  footer {
-    position: static; /*akan ditempatkan sesuai dengan urutan normal dalam dokumen HTML*/
-  }
-
-  header {
-    padding-top: 40px;
-  }
-} /*Gaya untuk media query yang akan diterapkan ketika tinggi layar maksimum adalah 800 piksel. Ini mengubah posisi footer menjadi statis dan mengurangi padding atas pada elemen header.*/
-
-.footer {
-  margin: 0px;
-}
 .footer .footer-left {
   width: 30%;
 } /*Menetapkan lebar masing-masing kolom (kiri, tengah, kanan) di dalam elemen footer.*/
