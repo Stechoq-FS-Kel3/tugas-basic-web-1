@@ -196,15 +196,14 @@ hr {
 }
 
 footer {
-  position: sticky;
+  position: sticky; /*digunakan untuk membuat suatu elemen posisinya "lengket" pada posisi tertentu ketika pengguna melakukan scroll. */
   top: 0;
 } /*Menetapkan posisi elemen footer menjadi tetap di bagian bawah halaman.*/
 
 .footer {
-  background-color: #000000;
-  box-sizing: border-box;
+  background-color: #000000; /*Mengatur warna latar belakang footer menjadi hitam.*/
+  box-sizing: border-box; /*Mengubah model kotak menjadi "border-box", yang berarti padding dan border dari elemen akan termasuk dalam lebar dan tinggi yang ditentukan*/
   width: 100%;
-  text-align: left;
   font: bold 16px sans-serif;
   padding: 50px 50px 60px 50px;
   margin-top: 80px;
@@ -213,18 +212,17 @@ footer {
 .footer .footer-left,
 .footer .footer-center,
 .footer .footer-right {
-  display: inline-block;
-  vertical-align: top;
-} /*Gaya untuk kolom-kolom di dalam elemen footer. Semua kolom akan ditampilkan sebagai inline-block dan diatur secara vertikal di bagian atas.*/
+  display: inline-block; /*Ini membuat elemen tersebut menjadi satu baris dengan elemen lainnya, tetapi masih memungkinkan pemberian lebar dan tinggi pada elemen tersebut. */
+  vertical-align: top; /*Menetapkan posisi vertikal elemen. Dalam konteks ini, elemen akan disusun secara vertikal di bagian atas*/
+}
 
 @media (max-height: 800px) {
   footer {
-    position: static;
+    position: static; /*akan ditempatkan sesuai dengan urutan normal dalam dokumen HTML*/
   }
 
   header {
     padding-top: 40px;
-    padding-top: 0px;
   }
 } /*Gaya untuk media query yang akan diterapkan ketika tinggi layar maksimum adalah 800 piksel. Ini mengubah posisi footer menjadi statis dan mengurangi padding atas pada elemen header.*/
 
@@ -342,7 +340,7 @@ footer {
 }
 
 .footer .footer-nickig a:hover {
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(0, 255, 55);
 }
 
 @media (max-width: 880px) {
