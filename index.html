@@ -92,6 +92,8 @@
       </div>
     </section>
     <!-- end OurTeam -->
+
+    <!-- project teams -->
     <section class="projects-section" id="projects-section">
       <h1 class="title-project-section">PROJECTS TEAM</h1>
       <h4 class="desc-project-section">
@@ -102,14 +104,14 @@
         online presence.
       </h4>
       <div class="project-card">
-        <div class="card-content">
+        <div class="card-content" onclick="toggleModal1()">
           <img
             src="https://media.dev.to/cdn-cgi/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fi%2Frixan4h4z8y94eq89som.png"
             alt="image-project"
           />
           <h3>Git Collaboration</h3>
         </div>
-        <div class="card-content">
+        <div class="card-content" onclick="toggleModal2()">
           <img
             src="https://img.freepik.com/free-vector/flat-web-design-elements-green-color_23-2147542335.jpg?t=st=1709284387~exp=1709287987~hmac=07e1fb73452d4dd8c112ebc955a16de9db8118be18bc962497e7f718572a7be6&w=740"
             alt="image-project"
@@ -118,6 +120,38 @@
         </div>
       </div>
     </section>
+
+    <!-- modal project -->
+    <div class="modal" id="modal-1">
+      <div class="overlay"></div>
+      <div class="modal-content">
+        <div class="close-btn" onclick="toggleModal1()">&times;</div>
+        <h1>Title</h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+          eius sit eaque minima nobis commodi nulla expedita. Vitae non unde
+          assumenda explicabo harum minus odit corporis sed possimus. Adipisci,
+          beatae?
+        </p>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-2">
+      <div class="overlay"></div>
+      <div class="modal-content">
+        <div class="close-btn" onclick="toggleModal2()">&times;</div>
+        <h1>Title2</h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+          eius sit eaque minima nobis commodi nulla expedita. Vitae non unde
+          assumenda explicabo harum minus odit corporis sed possimus. Adipisci,
+          beatae?
+        </p>
+      </div>
+    </div>
+    <!-- end modal project -->
+    <!-- end project teams -->
+
     <footer class="footer">
       <!--Membungkus bagian footer dari halaman web, yang dibagi menjadi tiga bagian:-->
       <div class="footer-left">
