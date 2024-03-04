@@ -16,12 +16,13 @@ navbar
   width: 100%;
   display: flex;
   justify-content: space-between;
-  height: 55px;
+  height: auto;
   font-size: 20px;
   align-items: center;
   padding: 15px;
   background-color: #0a0a0a;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
 
 .brand {
@@ -56,6 +57,11 @@ navbar
   justify-content: center;
   align-items: center;
   padding-right: 20px;
+  margin: 0px;
+  padding: 0%;
+}
+#navigation {
+  margin-right: 40px;
 }
 
 .navigation > li {
@@ -75,9 +81,84 @@ navbar
   color: #7f3aff;
   transition: all 0.2s ease-in-out;
 }
+.iconNav {
+  width: 60px;
+  margin-right: 30px;
+  display: none;
+}
+
+@media only screen and (max-width: 900px) {
+  ul {
+    flex-direction: column;
+    width: 100%;
+    list-style-type: none;
+    align-items: center;
+    display: flex;
+  }
+
+  nav {
+    flex-wrap: wrap;
+  }
+  .iconNav {
+    display: flex;
+  }
+  .navigation {
+    display: none;
+  }
+  .testing {
+    flex-direction: column;
+  }
+  .textal {
+    margin-top: 20px;
+    margin: 0px;
+  }
+  #halo {
+    padding-top: 10px;
+    margin: 0%;
+  }
+}
 
 /*akhir navbar*/
 
+/*awal hero section*/
+.heroSection {
+  margin-top: 250px;
+  margin-bottom: 250px;
+  justify-content: center;
+  display: flex;
+}
+.textal > h1 {
+  margin-left: 26px;
+  font-weight: bolder;
+  font-size: 30px;
+}
+#halo {
+  width: 40px;
+  margin-left: 25px;
+  font-size: 50px;
+  margin-bottom: -10px;
+  font-weight: 800;
+  font-family: sans-serif;
+  letter-spacing: -2px;
+}
+.testing {
+  display: flex;
+}
+.textal > p {
+  margin: 20px;
+  margin-top: 10px;
+  margin-left: 25px;
+  margin-right: 100px;
+  text-align: justify;
+}
+.testing > img {
+  width: 500px;
+  margin-left: 70px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+/*akhir hero section*/
 /* ourteam */
 
 .ourteam-container {
@@ -106,13 +187,16 @@ navbar
   background-color: #fff;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
   margin: 30px;
   text-align: center;
 }
 .ourteam-card img {
-  width: 100%;
-  height: 350px;
+  margin-top: 12px;
+  width: 98%;
+  height: 300px;
+  border-radius: 5px;
+  margin-bottom: 15px;
 }
 hr {
   width: 70%;
@@ -122,40 +206,16 @@ hr {
 }
 /* end ourteam */
 
-/*awal hero section*/
-.heroSection {
-  margin-top: 250px;
-  margin-bottom: 250px;
-  justify-content: center;
-}
-.textal > h1 {
-  margin-left: 26px;
-  font-weight: bolder;
-}
-.testing {
-  display: flex;
-}
-.textal > p {
-  margin: 20px;
-  margin-top: 10px;
-  margin-left: 25px;
-  margin-right: 100px;
-  text-align: justify;
-}
-.testing > img {
-  width: 500px;
-  margin-left: 70px;
-}
-/*akhir hero section*/
+/* project teams */
 .projects-section {
   margin: 0px;
-  margin-top: 40px;
   padding: 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #f0f0f0;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .title-project-section {
@@ -195,6 +255,62 @@ hr {
   height: 350px;
 }
 
+.card-content:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* modal */
+.modal .overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  display: none;
+}
+
+.modal .modal-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background: #fff;
+  width: 450px;
+  height: 220px;
+  z-index: 2;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.modal .close-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 30px;
+  height: 30px;
+  background: #000000;
+  color: #ffffff;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.modal.active .overlay {
+  display: block;
+}
+
+.modal.active .modal-content {
+  transition: all 300ms ease-in-out;
+  transform: translate(-50%, -50%) scale(1);
+}
+/* end modal */
+/* end project teams */
+
 footer {
   position: sticky; /*digunakan untuk membuat suatu elemen posisinya "lengket" pada posisi tertentu ketika pengguna melakukan scroll. */
   top: 0;
@@ -206,7 +322,6 @@ footer {
   width: 100%;
   font: bold 16px sans-serif;
   padding: 50px 50px 60px 50px;
-  margin-top: 80px;
 } /*Gaya untuk elemen dengan kelas .footer. Ini mengatur latar belakang menjadi warna ungu (#320064), lebar elemen menjadi 100%, font tebal dengan ukuran 16 piksel, dan padding diatur secara spesifik.*/
 
 .footer .footer-left,
@@ -226,6 +341,9 @@ footer {
   }
 } /*Gaya untuk media query yang akan diterapkan ketika tinggi layar maksimum adalah 800 piksel. Ini mengubah posisi footer menjadi statis dan mengurangi padding atas pada elemen header.*/
 
+.footer {
+  margin: 0px;
+}
 .footer .footer-left {
   width: 30%;
 } /*Menetapkan lebar masing-masing kolom (kiri, tengah, kanan) di dalam elemen footer.*/
@@ -317,7 +435,6 @@ footer {
 
 .footer .footer-nickig {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around; /* Menyebarkan item secara merata dengan sedikit ruang di antaranya */
   margin-top: 25px;
 }
@@ -357,3 +474,61 @@ footer {
     margin-left: 0px;
   }
 } /*Gaya untuk media query yang akan diterapkan ketika lebar layar maksimum adalah 880 piksel. Ini mengubah tata letak kolom menjadi tata letak blok, mengatur lebar menjadi 100%, menambahkan margin bawah, dan mengubah beberapa gaya untuk kolom tengah.*/
+
+/*STYLE ABOUT US DIMULAI DARI SINI*/
+.heading h1 {
+  color: #320064;
+  font-size: 55px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 35px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 65px auto;
+}
+.hero-content {
+  flex: 1;
+  width: 600px;
+  margin: 0px 25px;
+}
+.hero-image {
+  flex: 1;
+  width: 600px;
+  margin: auto;
+}
+.hero-content p {
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+  color: #666;
+}
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.hero-content h2 {
+  font-size: 38px;
+  margin-bottom: 20px;
+  color: #333;
+}
+.hero-content button {
+  display: inline-block;
+  background-color: #320064;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.hero-content button:hover {
+  background-color: #320064;
+  transform: scale(1.1);
+}
+/*STYLE ABOUT US BERAKHIR DI SINI*/
