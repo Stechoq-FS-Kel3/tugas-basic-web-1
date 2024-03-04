@@ -7,8 +7,14 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <!--Menghubungkan ke Font Awesome CDN untuk menggunakan ikon-ikon yang disediakan oleh Font Awesome.-->
   </head>
   <body>
@@ -25,7 +31,7 @@
         <ul id="navigation" class="navigation">
           <li><a href="index.html">home</a></li>
           <li><a href="#OurTeam">OurTeam</a></li>
-          <li><a href="">About Us</a></li>
+          <li><a href="#aboutus">About Us</a></li>
           <li><a href="#projects-section">Projects</a></li>
         </ul>
       </nav>
@@ -38,32 +44,39 @@
           <h1 id="halo">Hallo,</h1>
           <h1 id="namkel">Kami dari Kelompok 3</h1>
           <p>
-            "Kami merupakan salah satu tim yang tengah mengikuti program pelatihan di Stechoq Academy. Besar harapan kami untuk menjadi seorang web developer yang kompeten di bidangnya. Kami yakin bahwa melalui Stechoq Academy, mimpi kami
-            untuk menjadi web developer yang handal dapat terwujud."
+            "Kami merupakan salah satu tim yang tengah mengikuti program
+            pelatihan di Stechoq Academy. Besar harapan kami untuk menjadi
+            seorang web developer yang kompeten di bidangnya. Kami yakin bahwa
+            melalui Stechoq Academy, mimpi kami untuk menjadi web developer yang
+            handal dapat terwujud."
           </p>
         </div>
       </div>
     </section>
-    <!-- BAGIAN ABOUT US DIMULAI DARI SINI -->    
+    <!-- BAGIAN ABOUT US DIMULAI DARI SINI -->
     <aboutus>
-      <section class="heor">
+      <section class="heor" id="aboutus">
         <div class="heading">
           <h1>About Us Teams Rubah Code</h1>
         </div>
         <div class="container">
           <div class="hero-content">
             <h2>Selamat Datang di Website Rubah Code</h2>
-            <p>Website ini merupakan hasil kerjasama dari kami kelompok 3 dari divisi Fullstack, perancangan tampilan web ini menggunakan HTML dan juga CSS lalu beberapa javascript di bagian tertentu.
-              Kami berfokus pada desain website interaktif dan juga profesional.</p>
-            <button class="cta-button"> Learn More</button>
+            <p>
+              Website ini merupakan hasil kerjasama dari kami kelompok 3 dari
+              divisi Fullstack, perancangan tampilan web ini menggunakan HTML
+              dan juga CSS lalu beberapa javascript di bagian tertentu. Kami
+              berfokus pada desain website interaktif dan juga profesional.
+            </p>
+            <button class="cta-button">Learn More</button>
           </div>
           <div class="hero-image">
-            <img src="images/gambartim.jpg">
+            <img src="images/gambartim.jpg" />
           </div>
         </div>
       </section>
     </aboutus>
-<!-- BAGIAN ABOUT US BERAKHIR DISINI -->
+    <!-- BAGIAN ABOUT US BERAKHIR DISINI -->
     <!-- OurTeam -->
     <section id="OurTeam">
       <div class="ourteam-container" id="OurTeam">
@@ -103,18 +116,26 @@
       </div>
     </section>
     <!-- end OurTeam -->
+
+    <!-- project teams -->
     <section class="projects-section" id="projects-section">
       <h1 class="title-project-section">PROJECTS TEAM</h1>
       <h4 class="desc-project-section">
-        Explore the fascinating world of team collaboration with our innovative project, "Web Profile Team." Dive into a seamless web experience, where creativity and functionality converge. Discover the power of united efforts, efficient
-        workflows, and captivating designs that redefine online presence.
+        Explore the fascinating world of team collaboration with our innovative
+        project, "Web Profile Team." Dive into a seamless web experience, where
+        creativity and functionality converge. Discover the power of united
+        efforts, efficient workflows, and captivating designs that redefine
+        online presence.
       </h4>
       <div class="project-card">
-        <div class="card-content">
-          <img src="https://media.dev.to/cdn-cgi/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fi%2Frixan4h4z8y94eq89som.png" alt="image-project" />
+        <div class="card-content" onclick="toggleModal1()">
+          <img
+            src="https://media.dev.to/cdn-cgi/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fi%2Frixan4h4z8y94eq89som.png"
+            alt="image-project"
+          />
           <h3>Git Collaboration</h3>
         </div>
-        <div class="card-content">
+        <div class="card-content" onclick="toggleModal2()">
           <img
             src="https://img.freepik.com/free-vector/flat-web-design-elements-green-color_23-2147542335.jpg?t=st=1709284387~exp=1709287987~hmac=07e1fb73452d4dd8c112ebc955a16de9db8118be18bc962497e7f718572a7be6&w=740"
             alt="image-project"
@@ -123,6 +144,38 @@
         </div>
       </div>
     </section>
+
+    <!-- modal project -->
+    <div class="modal" id="modal-1">
+      <div class="overlay"></div>
+      <div class="modal-content">
+        <div class="close-btn" onclick="toggleModal1()">&times;</div>
+        <h1>Title</h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+          eius sit eaque minima nobis commodi nulla expedita. Vitae non unde
+          assumenda explicabo harum minus odit corporis sed possimus. Adipisci,
+          beatae?
+        </p>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-2">
+      <div class="overlay"></div>
+      <div class="modal-content">
+        <div class="close-btn" onclick="toggleModal2()">&times;</div>
+        <h1>Title2</h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+          eius sit eaque minima nobis commodi nulla expedita. Vitae non unde
+          assumenda explicabo harum minus odit corporis sed possimus. Adipisci,
+          beatae?
+        </p>
+      </div>
+    </div>
+    <!-- end modal project -->
+    <!-- end project teams -->
+
     <footer class="footer">
       <!--Membungkus bagian footer dari halaman web, yang dibagi menjadi tiga bagian:-->
       <div class="footer-left">
@@ -155,15 +208,30 @@
         <!--Berisi tentang deskripsi perusahaan atau tim dan tautan media sosial anggota tim dengan ikon Instagram yang diikuti oleh nama masing-masing.-->
         <p class="footer-keterangan">
           <span>About</span>
-          Pada Layout Website ini kita dari Kelompok 03 yaitu RubahCode membuat tampilan website untuk menggambarkan biodata anggota kelompok serta projek dan teknologi apa yang kita pelajari di PT Stechoq Robotika Indonesia
+          Pada Layout Website ini kita dari Kelompok 03 yaitu RubahCode membuat
+          tampilan website untuk menggambarkan biodata anggota kelompok serta
+          projek dan teknologi apa yang kita pelajari di PT Stechoq Robotika
+          Indonesia
         </p>
 
         <div class="footer-nickig">
-          <a href="#"><i class="fa fa-instagram"></i><span>Dhenmas Adhimaulana Saputra</span></a>
-          <a href="#"><i class="fa fa-instagram"></i><span>Muhammad Fajar Anshori</span></a>
-          <a href="#"><i class="fa fa-instagram"></i><span>Nezal Khekam Ramadhan</span></a>
+          <a href="#"
+            ><i class="fa fa-instagram"></i
+            ><span>Dhenmas Adhimaulana Saputra</span></a
+          >
+          <a href="#"
+            ><i class="fa fa-instagram"></i
+            ><span>Muhammad Fajar Anshori</span></a
+          >
+          <a href="#"
+            ><i class="fa fa-instagram"></i
+            ><span>Nezal Khekam Ramadhan</span></a
+          >
           <a href="#"><i class="fa fa-instagram"></i><span>@fuadevo19</span></a>
-          <a href="#"><i class="fa fa-instagram"></i><span>Juwandito Rajendra Wrahatnolo</span></a>
+          <a href="#"
+            ><i class="fa fa-instagram"></i
+            ><span>Juwandito Rajendra Wrahatnolo</span></a
+          >
         </div>
       </div>
     </footer>
