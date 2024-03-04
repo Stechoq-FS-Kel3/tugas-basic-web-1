@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
@@ -61,8 +62,8 @@
         </div>
         <div class="container">
           <div class="hero-content">
-            <h2>Selamat Datang di Website Rubah Code</h2>
-            <p>
+            <h2 data-aos="fade-right">Selamat Datang di Website Rubah Code</h2>
+            <p data-aos="fade-right">
               Website ini merupakan hasil kerjasama dari kami kelompok 3 dari
               divisi Fullstack, perancangan tampilan web ini menggunakan HTML
               dan juga CSS lalu beberapa javascript di bagian tertentu. Kami
@@ -71,7 +72,7 @@
             <button class="cta-button">Learn More</button>
           </div>
           <div class="hero-image">
-            <img src="images/gambartim.jpg" />
+            <img src="images/gambartim.jpg" data-aos="zoom-in-up" />
           </div>
         </div>
       </section>
@@ -82,31 +83,31 @@
       <div class="ourteam-container" id="OurTeam">
         <h2 class="title-ourteam">Our Team</h2>
         <div class="ourteam-card">
-          <div class="card-ourteam-content">
+          <div class="card-ourteam-content" data-aos="fade-up">
             <img src="images/dhenmas.jpg" alt="image-project" />
             <h3>Dhenmas Adhimaulana saputra</h3>
             <p>Frontend Dev</p>
             <p>Universitas Negeri Surabaya</p>
           </div>
-          <div class="card-ourteam-content">
+          <div class="card-ourteam-content" data-aos="fade-up">
             <img src="images/fuad.jpg" alt="image-project" />
             <h3>Muhammad Fu'adi</h3>
             <p>Backend Dev</p>
             <p>Universitas Nusantara PGRI Kediri</p>
           </div>
-          <div class="card-ourteam-content">
+          <div class="card-ourteam-content" data-aos="fade-up">
             <img src="images/fajar.jpg" alt="image-project" />
             <h3>Muhammad Fajar Anshori</h3>
             <p>Backend Dev</p>
             <p>Universitas Trunojoyo</p>
           </div>
-          <div class="card-ourteam-content">
+          <div class="card-ourteam-content" data-aos="fade-up">
             <img src="images/juwandito.jpg" alt="image-project" />
             <h3>Juwandito Rajendra Wrahatnolo</h3>
             <p>Backend Dev</p>
             <p>Universitas Muhammadiyah Surakarta</p>
           </div>
-          <div class="card-ourteam-content">
+          <div class="card-ourteam-content" data-aos="fade-up">
             <img src="images/nezal.jpg" alt="image-project" />
             <h3>Nezal Khekam Ramadhan</h3>
             <p>Backend Dev</p>
@@ -129,14 +130,14 @@
       </h4>
       <div class="project-card">
         <div class="card-content" onclick="toggleModal1()">
-          <img
-            src="https://media.dev.to/cdn-cgi/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fi%2Frixan4h4z8y94eq89som.png"
+          <img data-aos="zoom-in-up"
+            src="https://media.dev.to/cdn-cgi/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fi%2Frixan4h4z8y94eq89som.png" 
             alt="image-project"
           />
           <h3>Git Collaboration</h3>
         </div>
         <div class="card-content" onclick="toggleModal2()">
-          <img
+          <img data-aos="zoom-in-up"
             src="https://img.freepik.com/free-vector/flat-web-design-elements-green-color_23-2147542335.jpg?t=st=1709284387~exp=1709287987~hmac=07e1fb73452d4dd8c112ebc955a16de9db8118be18bc962497e7f718572a7be6&w=740"
             alt="image-project"
           />
@@ -223,5 +224,9 @@
         </div>            
     </div>
     <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
